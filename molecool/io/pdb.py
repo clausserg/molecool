@@ -7,7 +7,26 @@ This submodule does stuff with pdb files
 import numpy as np
 
 def open_pdb(f_location):
-    # This function reads in a pdb file and returns the atom names and coordinates.
+    """
+    Opens and reads a PDB files
+
+    Parameters
+    ==========
+    f_location : string
+        The name of the files that is desired to be opened
+
+    Returns
+    =======
+    symbols : list
+        A list containing the atom symbols, names
+    coordinates : np.ndarray
+        A numpy array containing the coordinates
+
+    Examples
+    ========
+
+    >>> open_pdb("thorocene.pdb")
+    """
     with open(f_location) as f:
         data = f.readlines()
 
