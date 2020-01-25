@@ -21,3 +21,7 @@ This repo is currently under development.
 Install with
 'pip install -e'
 
+This package requires:
+	-numpy
+	-matplotlib
+
