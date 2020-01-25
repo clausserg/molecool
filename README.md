@@ -16,3 +16,10 @@ Copyright (c) 2020, clausserg
  
 Project based on the 
 [Computational Molecular Science Python Cookiecutter](https://github.com/molssi/cookiecutter-cms) version 1.1.
+
+This repo is currently under development.
+Install with
+'pip install -e'
+
+Best wishes,
+Claudiu.
