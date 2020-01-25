@@ -21,5 +21,3 @@ This repo is currently under development.
 Install with
 'pip install -e'
 
-Best wishes,
-Claudiu.
