@@ -29,6 +29,10 @@ def calculate_distance(r_a, r_b):
     >>> calculate_distance(r1, r2)
     0.1
     """
+
+    if not isinstance(r_a, np.ndarray) or not isinstance(r_b, np.ndarray):
+        raise TypeError("One or both input parameters must be np.ndarrays!!!")
+
     distance_vector = (r_a - r_b)
     distance = np.linalg.norm(distance_vector)
     return distance
@@ -36,8 +40,8 @@ def calculate_distance(r_a, r_b):
 def calculate_angle(r_a, r_b, r_c, degrees=False):
     # Calculate the angle between three points. Answer is given in radians by default, but can be given in degrees
     # by setting degrees=True
-    r_ab = r_b - ra
-    r_bc = r_b - rc
+    r_ab = r_b - r_a
+    r_bc = r_b - r_c
     theta=np.arccos(np.dot(r_ab, r_bc)/(np.linalg.norm(r_ab)*np.linalg.norm(r_bc)))
 
     if degrees:
